@@ -48,4 +48,9 @@ group :production do
   gem 'rails_12factor'
 end
 
+platforms :ruby do
+  # gems specific to linux
+  gem 'unicorn'
+end
+
 ruby "2.0.0"
