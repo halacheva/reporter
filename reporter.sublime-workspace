@@ -1,0 +1,311 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"res",
+				"respondents_count"
+			],
+			[
+				"invit",
+				"invite_code"
+			],
+			[
+				"dev",
+				"device_message"
+			],
+			[
+				"Invi",
+				"InviteCode"
+			],
+			[
+				"responden",
+				"respondents_count"
+			],
+			[
+				"invite",
+				"invite_code"
+			],
+			[
+				"nil",
+				"nil"
+			],
+			[
+				"destr",
+				"destroy_all"
+			],
+			[
+				"be_",
+				"be_present"
+			],
+			[
+				"pro",
+				"prop_image"
+			],
+			[
+				"attri",
+				"attributes_for"
+			],
+			[
+				"Prop",
+				"PropImage"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Projects/Ruby On Rails/ruby_training/ruby_homework.rb",
+		"/C/Users/mhalacheva/Desktop/Koce - Ruby homework 1/homework_Koce.txt",
+		"/C/Users/mhalacheva/Desktop/Kamen - Ruby homework/homework_Kamen.txt",
+		"/C/Ruby Workspace/avenace/spec/controllers/api/invite_codes_controller_spec.rb",
+		"/C/Ruby Workspace/avenace/spec/factories/invite_code.rb",
+		"/C/Ruby Workspace/avenace/spec/controllers/api/respondents_controller_spec.rb",
+		"/C/Ruby Workspace/avenace/spec/requests/admin/active_admin_spec.rb",
+		"/C/Ruby Workspace/avenace/@writer=#<Proc:0x9324b58@C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/test_case.rb",
+		"/C/Ruby Workspace/avenace/spec/controllers/api/tours_controller_spec.rb",
+		"/C/Ruby Workspace/avenace/app/controllers/api/invite_codes_controller.rb",
+		"/C/Ruby Workspace/avenace/app/models/respondent.rb",
+		"/C/Ruby Workspace/avenace/app/admin/user_management/invite_codes.rb",
+		"/C/Ruby Workspace/avenace/app/models/invite_code.rb",
+		"/C/Ruby Workspace/avenace/spec/controllers/api/payments_controller_spec.rb",
+		"/C/Ruby Workspace/avenace/spec/controllers/api/invitations_controller_spec.rb",
+		"/C/Ruby Workspace/avenace/spec/controllers/api/geonotes_controller_spec.rb",
+		"/C/Ruby Workspace/avenace/spec/controllers/api/geonote_types_controller_spec.rb",
+		"/C/Ruby Workspace/avenace/spec/controllers/api/attr_people_controller_spec.rb",
+		"/C/Ruby Workspace/avenace/spec/controllers/api/application_controller_spec.rb",
+		"/C/Ruby Workspace/avenace/spec/factories/admin_user.rb",
+		"/C/Ruby Workspace/avenace/spec/factories/setting.rb",
+		"/C/Ruby Workspace/avenace/script/rails",
+		"/C/Ruby Workspace/avenace/script/cucumber",
+		"/C/Ruby Workspace/avenace/spec/factories/geonote.rb",
+		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/RubyTest/RubyTest.sublime-settings",
+		"/C/Ruby Workspace/avenace/spec/factories/prop_image.rb",
+		"/C/Ruby Workspace/avenace/app/controllers/api/geonotes_controller.rb",
+		"/C/Ruby Workspace/avenace/log/test.log",
+		"/C/Ruby Workspace/avenace/app/models/prop_image.rb"
+	],
+	"find":
+	{
+		"height": 164.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"test",
+			"opt_in",
+			"cache",
+			"counter cache",
+			"count",
+			")\n",
+			"signup",
+			"payment_options",
+			"payments",
+			"update_first_heart_beats",
+			"compile",
+			"update_respondents_count",
+			"opt_in_with_invite_code",
+			"FactoryGirl",
+			"create",
+			"respondents_count",
+			"signup",
+			"zipCode",
+			"|",
+			"subject",
+			"201",
+			"show",
+			"begin",
+			"\")\n",
+			"maria",
+			"aaaaaa",
+			"<p>\nIt was nice having you here.\n</p>",
+			".\n",
+			"</p>"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 295.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"respo",
+				"app/models/respondent.rb"
+			],
+			[
+				"invite",
+				"app/admin/user_management/invite_codes.rb"
+			],
+			[
+				"active_admin_sp",
+				"spec/requests/admin/active_admin_spec.rb"
+			],
+			[
+				"prop_image",
+				"app/models/prop_image.rb"
+			],
+			[
+				"prop",
+				"spec/factories/prop_image.rb"
+			],
+			[
+				"log",
+				"log/test.log"
+			],
+			[
+				"api/geonotes",
+				"app/controllers/api/geonotes_controller.rb"
+			],
+			[
+				"geonote",
+				"app/assets/javascripts/geonote.js"
+			],
+			[
+				"amy",
+				"app/assets/javascripts/my_best_in_place.js"
+			],
+			[
+				"aaa",
+				"app/admin/analysis_page.rb"
+			],
+			[
+				"good",
+				"app/views/say/goodbye.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Ruby Workspace/avenace-s.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true
+}
