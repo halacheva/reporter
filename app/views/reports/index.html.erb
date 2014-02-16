@@ -7,9 +7,8 @@
       <th>Description</th>
       <th>Body</th>
       <th>Location</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Categories</th>
+      <th>Actions</th>
     </tr>
   </thead>
 
@@ -20,9 +19,16 @@
         <td><%= report.description %></td>
         <td><%= report.body %></td>
         <td><%= report.location %></td>
-        <td><%= link_to 'Show', report %></td>
-        <td><%= link_to 'Edit', edit_report_path(report) %></td>
-        <td><%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <% report.categories.each do |category| %>
+            <span><%= category.name %></span>
+          <% end %>
+        </td>
+        <td>
+          <span><%= link_to 'Show', report %></span>
+          <span><%= link_to 'Edit', edit_report_path(report) %></span>
+          <span><%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+        </td>
       </tr>
     <% end %>
   </tbody>

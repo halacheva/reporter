@@ -49,6 +49,7 @@ group :development, :test do
   gem 'spork-rails'
   gem 'spork-testunit'
   gem 'guard-spork'
+  gem 'rubocop'
 end
 
 group :production do
@@ -60,4 +61,4 @@ platforms :ruby do
   gem 'unicorn'
 end
 
-ruby "2.0.0"
+ruby '2.0.0'
