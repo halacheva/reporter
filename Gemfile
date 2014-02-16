@@ -44,6 +44,13 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :development, :test do
+  # Add Spork test server for Rails
+  gem 'spork-rails'
+  gem 'spork-testunit'
+  gem 'guard-spork'
+end
+
 group :production do
   gem 'rails_12factor'
 end

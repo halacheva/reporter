@@ -21,7 +21,7 @@ development:
   username: reporter
   password: 12345
   database: reporter_development
-  encoding: urf8
+  encoding: utf8
   pool: 5
   wait_timeout: 10
 
@@ -53,7 +53,7 @@ test:
   username: reporter
   password: 12345
   database: reporter_test
-  encoding: urf8
+  encoding: utf8
   pool: 5
   wait_timeout: 10
 
@@ -62,6 +62,6 @@ production:
   username: reporter
   password: 12345
   database: reporter_production
-  encoding: urf8
+  encoding: utf8
   pool: 5
   wait_timeout: 10
