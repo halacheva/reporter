@@ -27,12 +27,14 @@
     <%= f.label :location %><br>
     <%= f.text_field :location %>
   </div>
-  <% @categories.each do |category| %>
-    <div class="field">
+
+  <div class="field">
+    <%= label 'category_ids', 'Categories'%><br>
+    <% @categories.each do |category| %>
       <%= check_box_tag "report[category_ids][]", category.id, @report.categories.include?(category) %>
-      <%= category.name %>
-    </div>
-  <% end %>
+      <%= category.name %><br>
+    <% end %>
+  </div>
 
   <div class="actions">
     <%= f.submit %>

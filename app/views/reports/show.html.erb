@@ -1,31 +1,40 @@
 <p id="notice"><%= notice %></p>
+<div class='action-buttons'>
+  <%= link_to 'Edit', edit_report_path(@report) %>
+  <%= link_to 'Back', reports_path %>
+</div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @report.title %>
-</p>
+<div class='details-container'>
+  <h2>Report Details</h2>
+  <p>
+    <strong>Title:</strong>
+    <%= @report.title %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @report.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @report.description %>
+  </p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @report.body %>
-</p>
+  <p>
+    <strong>Body:</strong>
+    <%= @report.body %>
+  </p>
 
-<p>
-  <strong>Location:</strong>
-  <%= @report.location %>
-</p>
+  <p>
+    <strong>Location:</strong>
+    <%= @report.location %>
+  </p>
 
-<p>
+  <p>
+    <strong>Categories Count:</strong>
+    <%= @report.categories.size %>
+  </p>
+
+  <p>
     <strong>Categories:</strong>
-  <% @report.categories.each do |category| %>
-    <span><%= category.name %></span>
-  <% end %>
-</p>
-
-<%= link_to 'Edit', edit_report_path(@report) %> |
-<%= link_to 'Back', reports_path %>
+    <% @report.categories.each do |category| %>
+      <span><%= link_to category.name, category %></span>
+    <% end %>
+  </p>
+</div>

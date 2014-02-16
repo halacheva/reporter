@@ -1,9 +1,25 @@
 <p id="notice"><%= notice %></p>
+<div class='action-buttons'>
+  <%= link_to 'Edit', edit_category_path(@category) %>
+  <%= link_to 'Back', categories_path %>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @category.name %>
-</p>
+<div class='details-container'>
+  <h2>Category Details</h2>
+  <p>
+    <strong>Name:</strong>
+    <%= @category.name %>
+  </p>
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+  <p>
+    <strong>Reports Count:</strong>
+    <%= @category.reports.size %>
+  </p>
+
+  <p>
+    <strong>Reports:</strong>
+    <% @category.reports.each do |report| %>
+      <span><%= link_to report.title, report %></span>
+    <% end %>
+  </p>
+</div>

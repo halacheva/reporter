@@ -1,6 +1,6 @@
 # Reports controller
 class ReportsController < ApplicationController
-  before_action :set_report, only: [:show, :edit, :update, :destroy]
+  before_action :set_report
 
   # GET /reports
   # GET /reports.json
@@ -69,7 +69,7 @@ class ReportsController < ApplicationController
   # Use callbacks to share common setup
   # or constraints between actions.
   def set_report
-    @report = Report.find(params[:id])
+    @report = Report.find(params[:id]) unless params[:id].nil?
     @categories = Category.all
   end
 

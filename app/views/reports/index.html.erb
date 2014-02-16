@@ -1,4 +1,7 @@
-<h1>Listing reports</h1>
+<div class='page-title'>Listing reports</div>
+<div class='action-buttons'>
+  <%= link_to 'New Report', new_report_path %>
+</div>
 
 <table>
   <thead>
@@ -7,7 +10,7 @@
       <th>Description</th>
       <th>Body</th>
       <th>Location</th>
-      <th>Categories</th>
+      <th>Categories Count</th>
       <th>Actions</th>
     </tr>
   </thead>
@@ -19,11 +22,7 @@
         <td><%= report.description %></td>
         <td><%= report.body %></td>
         <td><%= report.location %></td>
-        <td>
-          <% report.categories.each do |category| %>
-            <span><%= category.name %></span>
-          <% end %>
-        </td>
+        <td><%= report.categories.size %></td>
         <td>
           <span><%= link_to 'Show', report %></span>
           <span><%= link_to 'Edit', edit_report_path(report) %></span>
@@ -33,7 +32,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Report', new_report_path %>
