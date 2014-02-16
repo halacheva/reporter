@@ -164,8 +164,12 @@ input[type='checkbox']:first-of-type {
 }
 
 #notice {
-  color: green;
+  color: #5EB87B;
   font-size: 1.3em;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  font-weight: bold;
 }
 
 .field_with_errors {
