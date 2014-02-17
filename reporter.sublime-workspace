@@ -4,6 +4,90 @@
 		"selected_items":
 		[
 			[
+				"repo",
+				"reports"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"o",
+				"odd"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"nt",
+				"nth-child"
+			],
+			[
+				"Cate",
+				"categories"
+			],
+			[
+				"repor",
+				"report"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"ac",
+				"action-buttons"
+			],
+			[
+				"font-wei",
+				"font-weight"
+			],
+			[
+				"lett",
+				"letter-spacing"
+			],
+			[
+				"let",
+				"letter-spacing"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"cra",
+				"create"
+			],
+			[
+				"up",
+				"update"
+			],
+			[
+				"categ",
+				"categories"
+			],
+			[
+				"confi",
+				"config"
+			],
+			[
+				"vali",
+				"validates"
+			],
+			[
 				"uni",
 				"unicorn"
 			],
@@ -63,48 +147,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/views/welcome/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 65,
-				"line_ending": "Windows",
-				"name": "<h2>Hello World</h2>"
-			}
-		},
-		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 1628,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/database.yml",
-			"settings":
-			{
-				"buffer_size": 1818,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 1437,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Procfile",
-			"settings":
-			{
-				"buffer_size": 56,
-				"line_ending": "Windows",
-				"name": "web: bundle exec unicorn -p $PORT -c ./config/unic"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -112,6 +154,18 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"console",
+				"Set Syntax: R Console"
+			],
+			[
+				"toggle ta",
+				"View: Toggle Tabs"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
 			[
 				"install package",
 				"Package Control: Install Package"
@@ -150,9 +204,57 @@
 	},
 	"file_history":
 	[
+		"/D/Projects/Ruby On Rails/reporter/app/models/category.rb",
+		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/D/Projects/Ruby On Rails/reporter/reporter.sublime-project",
+		"/D/Projects/Ruby On Rails/reporter/app/assets/stylesheets/style.css.scss",
+		"/D/Projects/Ruby On Rails/reporter/app/views/reports/index.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/app/views/categories/show.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/app/views/reports/show.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/app/views/reports/edit.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/app/views/reports/new.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/app/views/reports/_form.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/app/views/categories/index.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/app/views/layouts/application.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/app/views/categories/edit.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/app/views/categories/new.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/app/controllers/reports_controller.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/models/report.rb",
+		"/D/Projects/Ruby On Rails/reporter/.rubocop.yml",
+		"/D/Projects/Ruby On Rails/reporter/test/controllers/reports_controller_test.rb",
+		"/D/Projects/Ruby On Rails/reporter/test/controllers/categories_controller_test.rb",
+		"/D/Projects/Ruby On Rails/reporter/test/models/category_test.rb",
+		"/D/Projects/Ruby On Rails/reporter/test/models/report_test.rb",
+		"/D/Projects/Ruby On Rails/reporter/test/test_helper.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/controllers/categories_controller.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/helpers/categories_helper.rb",
+		"/D/Projects/Ruby On Rails/reporter/test/models/.keep",
+		"/D/Projects/Ruby On Rails/reporter/test/helpers/categories_helper_test.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/helpers/application_helper.rb",
+		"/D/Projects/Ruby On Rails/reporter/db/migrate/20140216001456_create_categories_reports.rb",
+		"/D/Projects/Ruby On Rails/reporter/db/migrate/20140216000220_create_reports.rb",
+		"/D/Projects/Ruby On Rails/reporter/db/migrate/20140215235406_create_categories.rb",
+		"/D/Projects/Ruby On Rails/reporter/config/environments/production.rb",
+		"/D/Projects/Ruby On Rails/reporter/config/environments/test.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/helpers/reports_helper.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/helpers/welcome_helper.rb",
+		"/D/Projects/Ruby On Rails/reporter/config/initializers/backtrace_silencers.rb",
+		"/D/Projects/Ruby On Rails/reporter/config/initializers/filter_parameter_logging.rb",
+		"/D/Projects/Ruby On Rails/reporter/config/initializers/inflections.rb",
+		"/D/Projects/Ruby On Rails/reporter/reporter.sublime-workspace",
+		"/D/Projects/Ruby On Rails/reporter/app/controllers/application_controller.rb",
+		"/D/Projects/Ruby On Rails/reporter/config/rubocop.yml",
+		"/D/Projects/Ruby On Rails/reporter/rubocop.yml",
+		"/D/Projects/Ruby On Rails/reporter/config/routes.rb",
+		"/D/Projects/Ruby On Rails/reporter/Gemfile",
+		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/D/Projects/Ruby On Rails/reporter/app/controllers/welcome_controller.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/views/welcome/index.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/config/database.yml",
+		"/D/Projects/Ruby On Rails/reporter/config/environment.rb",
+		"/D/Projects/Ruby On Rails/reporter/Procfile",
 		"/D/Projects/Ruby On Rails/reporter/.env",
 		"/D/Projects/Ruby On Rails/reporter/config/unicorn.rb",
-		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/D/Projects/Ruby On Rails/ruby_training/ruby_homework.rb",
 		"/C/Users/mhalacheva/Desktop/Koce - Ruby homework 1/homework_Koce.txt",
 		"/C/Users/mhalacheva/Desktop/Kamen - Ruby homework/homework_Kamen.txt",
@@ -200,6 +302,44 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"a {",
+			"form",
+			"#85718A",
+			"footer",
+			"  \n",
+			"a{",
+			"a {",
+			"a",
+			";\n",
+			"\"",
+			"rais",
+			"inspect",
+			"\n  <% end %>",
+			"%>\n",
+			"    @",
+			"\"",
+			"space",
+			"trailing",
+			"tab",
+			"ind",
+			"indent",
+			"doc",
+			"top",
+			"top  ",
+			"top ",
+			"comment",
+			"class comment",
+			"class",
+			"document",
+			"line",
+			"comment",
+			"documentation",
+			"top",
+			"top level",
+			"comment",
+			"class comment",
+			"length",
+			"\"",
 			"test",
 			"opt_in",
 			"cache",
@@ -236,6 +376,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"'"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -246,145 +387,13 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/views/welcome/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 65,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								64,
-								64
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<h2>Hello World</h2>",
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "config/routes.rb",
-					"settings":
-					{
-						"buffer_size": 1628,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1603,
-								1603
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "config/database.yml",
-					"settings":
-					{
-						"buffer_size": 1818,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1646,
-								1646
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 168.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Gemfile",
-					"settings":
-					{
-						"buffer_size": 1437,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								313,
-								313
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Procfile",
-					"settings":
-					{
-						"buffer_size": 56,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								56,
-								56
-							]
-						],
-						"settings":
-						{
-							"auto_name": "web: bundle exec unicorn -p $PORT -c ./config/unic",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -405,11 +414,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.951737451737,
 			1.0
 		],
 		"rows":
@@ -421,11 +437,11 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 295.0
+		"height": 219.0
 	},
 	"replace":
 	{
-		"height": 0.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
