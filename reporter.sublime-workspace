@@ -147,6 +147,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "reporter.sublime-project",
+			"settings":
+			{
+				"buffer_size": 583,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -204,6 +212,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/D/Projects/Ruby On Rails/reporter/app/models/category.rb",
 		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/D/Projects/Ruby On Rails/reporter/reporter.sublime-project",
@@ -247,7 +256,6 @@
 		"/D/Projects/Ruby On Rails/reporter/rubocop.yml",
 		"/D/Projects/Ruby On Rails/reporter/config/routes.rb",
 		"/D/Projects/Ruby On Rails/reporter/Gemfile",
-		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/D/Projects/Ruby On Rails/reporter/app/controllers/welcome_controller.rb",
 		"/D/Projects/Ruby On Rails/reporter/app/views/welcome/index.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/config/database.yml",
@@ -302,6 +310,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"length",
+			"line",
+			"LINE",
+			"tabs",
+			"whit",
 			"a {",
 			"form",
 			"#85718A",
@@ -387,8 +400,35 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "reporter.sublime-project",
+					"settings":
+					{
+						"buffer_size": 583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								583,
+								583
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{

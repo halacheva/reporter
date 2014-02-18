@@ -1,6 +1,7 @@
 # Reports controller
 class ReportsController < ApplicationController
-  before_action :set_report
+  before_action :set_report, only: [:show, :edit, :update, :destroy]
+  before_action :set_categories, only: [:new, :create, :edit, :update]
 
   # GET /reports
   # GET /reports.json
@@ -70,12 +71,16 @@ class ReportsController < ApplicationController
   # or constraints between actions.
   def set_report
     @report = Report.find(params[:id]) unless params[:id].nil?
-    @categories = Category.all
+  end
+
+  def set_categories
+    @categories = Category.order(:name)
   end
 
   # Never trust parameters from the scary internet,
   # only allow the white list through.
   def report_params
-    params.require(:report).permit(:title, :description, :body, :location, category_ids: [])
+    params.require(:report)
+      .permit(:title, :description, :body, :location, :active, category_ids: [])
   end
 end
