@@ -7,3 +7,7 @@ MethodCalledOnDoEndBlock:
 SymbolArray:
   Description: 'Use %i or %I for arrays of symbols.'
   Enabled: false
+
+Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false

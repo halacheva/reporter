@@ -123,10 +123,6 @@ DefWithParentheses:
   Description: 'Use def with parentheses when there are arguments.'
   Enabled: true
 
-Documentation:
-  Description: 'Document classes and non-namespace modules.'
-  Enabled: true
-
 DotPosition:
   Description: 'Checks the position of the dot in multi-line method calls.'
   Enabled: true
@@ -244,7 +240,7 @@ LeadingCommentSpace:
 LineEndConcatenation:
   Description: 'Use \\ instead of + to concatenate two string literals at line end.'
   Enabled: true
-  
+
 LineLength:
   Description: 'Limit lines to 79 characters.'
   Enabled: true

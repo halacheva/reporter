@@ -4,16 +4,28 @@
 		"selected_items":
 		[
 			[
+				"ca",
+				"categories"
+			],
+			[
+				"tr",
+				"through"
+			],
+			[
+				"cate",
+				"categories"
+			],
+			[
+				"th",
+				"through"
+			],
+			[
 				"repo",
 				"reports"
 			],
 			[
 				"back",
 				"background"
-			],
-			[
-				"cate",
-				"category"
 			],
 			[
 				"mar",
@@ -148,10 +160,26 @@
 	"buffers":
 	[
 		{
-			"file": "reporter.sublime-project",
+			"file": "app/controllers/reports_controller.rb",
 			"settings":
 			{
-				"buffer_size": 583,
+				"buffer_size": 2079,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/migrate/20140218082744_add_active_to_reports.rb",
+			"settings":
+			{
+				"buffer_size": 148,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/models/category_test.rb",
+			"settings":
+			{
+				"buffer_size": 139,
 				"line_ending": "Unix"
 			}
 		}
@@ -159,9 +187,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 376.0,
 		"selected_items":
 		[
+			[
+				"rubco",
+				"RuboCop: Check current file"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
 			[
 				"console",
 				"Set Syntax: R Console"
@@ -195,7 +231,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 472.0
+		"width": 488.0
 	},
 	"console":
 	{
@@ -212,24 +248,27 @@
 	},
 	"file_history":
 	[
-		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/D/Projects/Ruby On Rails/reporter/app/models/category.rb",
-		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/D/Projects/Ruby On Rails/reporter/reporter.sublime-project",
-		"/D/Projects/Ruby On Rails/reporter/app/assets/stylesheets/style.css.scss",
-		"/D/Projects/Ruby On Rails/reporter/app/views/reports/index.html.erb",
-		"/D/Projects/Ruby On Rails/reporter/app/views/categories/show.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/app/views/reports/show.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/app/views/reports/index.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/test/fixtures/categories.yml",
+		"/D/Projects/Ruby On Rails/reporter/test/fixtures/reports.yml",
+		"/D/Projects/Ruby On Rails/reporter/.rubocop.yml",
+		"/D/Projects/Ruby On Rails/reporter/enabled.yml",
+		"/D/Projects/Ruby On Rails/reporter/app/views/reports/_form.html.erb",
+		"/D/Projects/Ruby On Rails/reporter/app/models/category.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/models/report.rb",
+		"/D/Projects/Ruby On Rails/reporter/reporter.sublime-project",
+		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/D/Projects/Ruby On Rails/reporter/app/assets/stylesheets/style.css.scss",
+		"/D/Projects/Ruby On Rails/reporter/app/views/categories/show.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/app/views/reports/edit.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/app/views/reports/new.html.erb",
-		"/D/Projects/Ruby On Rails/reporter/app/views/reports/_form.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/app/views/categories/index.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/app/views/layouts/application.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/app/views/categories/edit.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/app/views/categories/new.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/app/controllers/reports_controller.rb",
-		"/D/Projects/Ruby On Rails/reporter/app/models/report.rb",
-		"/D/Projects/Ruby On Rails/reporter/.rubocop.yml",
 		"/D/Projects/Ruby On Rails/reporter/test/controllers/reports_controller_test.rb",
 		"/D/Projects/Ruby On Rails/reporter/test/controllers/categories_controller_test.rb",
 		"/D/Projects/Ruby On Rails/reporter/test/models/category_test.rb",
@@ -310,6 +349,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"        \n",
+			"td",
+			"        <",
+			"has_man",
+			"rails",
 			"length",
 			"line",
 			"LINE",
@@ -400,28 +444,82 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "reporter.sublime-project",
+					"file": "app/controllers/reports_controller.rb",
 					"settings":
 					{
-						"buffer_size": 583,
+						"buffer_size": 2079,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								583,
-								583
+								1994,
+								1994
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "db/migrate/20140218082744_add_active_to_reports.rb",
+					"settings":
+					{
+						"buffer_size": 148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/models/category_test.rb",
+					"settings":
+					{
+						"buffer_size": 139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								139,
+								139
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -543,7 +641,7 @@
 		[
 			[
 				"",
-				"/C/Ruby Workspace/avenace-s.sublime-project"
+				"/D/Projects/Ruby On Rails/depot/depot.sublime-project"
 			]
 		],
 		"width": 380.0
