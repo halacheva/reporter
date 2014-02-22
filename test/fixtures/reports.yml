@@ -1,13 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  description: MyText
-  body: MyText
-  location: MyString
+hawaii:
+  title: Hawaii
+  description: best place to go
+  body: best place to go
+  location: Hawaii
+  active: true
+  categories: [fun, trave]
 
-two:
-  title: MyString
-  description: MyText
-  body: MyText
-  location: MyString
+protest_in_sofia:
+  title: Protest In Sofia
+  description: protest in Sofia
+  body: protest in sofia
+  location: Sofia
+  active: false
+  categories: [politics]

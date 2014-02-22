@@ -1,6 +1,5 @@
 require 'test_helper'
 
-# Reports Controller Tests
 class ReportsControllerTest < ActionController::TestCase
   setup do
     @report = reports(:one)

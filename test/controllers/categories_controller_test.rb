@@ -1,6 +1,5 @@
 require 'test_helper'
 
-# Categories Controller Tests
 class CategoriesControllerTest < ActionController::TestCase
   setup do
     @category = categories(:one)
