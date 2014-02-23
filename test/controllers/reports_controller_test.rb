@@ -18,8 +18,7 @@ class ReportsControllerTest < ActionController::TestCase
     assert_response :success
 
     assert_select 'div.categories' do
-      assert_select 'input[type=\'checkbox\']', @categories_count,
-        'should show all categories'
+      assert_select 'input[type=\'checkbox\']', @categories_count, 'should show all categories'
     end
   end
 
@@ -33,7 +32,7 @@ class ReportsControllerTest < ActionController::TestCase
     end
 
     assert_equal Report.last.categories.size, @category_ids.size,
-      'report should have been associated with all requested categories'
+                 'report should have been associated with all requested categories'
     assert_redirected_to report_path(assigns(:report))
   end
 
@@ -52,7 +51,7 @@ class ReportsControllerTest < ActionController::TestCase
 
     assert_select 'div.categories' do
       assert_select 'input[type=\'checkbox\']', @categories_count,
-        'should show all categories'
+                    'should show all categories'
     end
 
     @report.categories do |category|
@@ -68,7 +67,7 @@ class ReportsControllerTest < ActionController::TestCase
                                           category_ids: @category_ids }
 
     assert_equal @report.categories.size, @category_ids.size,
-      'report should have been associated with all requested categories'
+                 'report should have been associated with all requested categories'
     assert_redirected_to report_path(assigns(:report))
   end
 
