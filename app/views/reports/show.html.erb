@@ -36,7 +36,7 @@
     <%= @report.categories.size %>
   </p>
 
-  <p>
+  <p class='categories'>
     <strong>Categories:</strong>
     <% @report.categories.each do |category| %>
       <span><%= link_to category.name, category %></span>

@@ -6,7 +6,6 @@ hawaii:
   body: best place to go
   location: Hawaii
   active: true
-  categories: [fun, trave]
 
 protest_in_sofia:
   title: Protest In Sofia
@@ -14,4 +13,3 @@ protest_in_sofia:
   body: protest in sofia
   location: Sofia
   active: false
-  categories: [politics]

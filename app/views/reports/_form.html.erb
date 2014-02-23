@@ -32,10 +32,11 @@
     <%= f.check_box :active %> Active
   </div>
 
-  <div class="field">
+  <div class="field categories">
     <%= label 'category_ids', 'Categories'%><br>
     <% @categories.each do |category| %>
-      <%= check_box_tag "report[category_ids][]", category.id, @report.categories.include?(category) %>
+      <%= check_box_tag "report[category_ids][]", category.id, @report.categories.include?(category),
+        id: "category_#{category.id}" %>
       <%= category.name %><br>
     <% end %>
   </div>
