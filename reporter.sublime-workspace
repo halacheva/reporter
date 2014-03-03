@@ -4,24 +4,120 @@
 		"selected_items":
 		[
 			[
+				"Ha",
+				"Hawaii"
+			],
+			[
+				"tra",
+				"travel"
+			],
+			[
+				"cate",
+				"categories_reports"
+			],
+			[
 				"ca",
 				"categories"
+			],
+			[
+				"ass",
+				"assert_select"
+			],
+			[
+				"report",
+				"report_id"
+			],
+			[
+				"repo",
+				"report"
+			],
+			[
+				"Cate",
+				"Category"
+			],
+			[
+				"R",
+				"Reports"
+			],
+			[
+				"assert_",
+				"assert_equal"
+			],
+			[
+				"pr",
+				"protest_in_sofia"
+			],
+			[
+				"po",
+				"politics"
+			],
+			[
+				"reo",
+				"reports"
+			],
+			[
+				"ha",
+				"hawaii"
+			],
+			[
+				"t",
+				"travel"
+			],
+			[
+				"category",
+				"category"
+			],
+			[
+				"Ca",
+				"Category"
+			],
+			[
+				"cat",
+				"categories"
+			],
+			[
+				"sho",
+				"should"
+			],
+			[
+				"sh",
+				"should"
+			],
+			[
+				"conta",
+				"contains"
+			],
+			[
+				"desc",
+				"description"
+			],
+			[
+				"in",
+				"invalid"
+			],
+			[
+				"dec",
+				"description"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"lo",
+				"location"
+			],
+			[
+				"shou",
+				"shouldn"
 			],
 			[
 				"tr",
 				"through"
 			],
 			[
-				"cate",
-				"categories"
-			],
-			[
 				"th",
 				"through"
-			],
-			[
-				"repo",
-				"reports"
 			],
 			[
 				"back",
@@ -42,10 +138,6 @@
 			[
 				"nt",
 				"nth-child"
-			],
-			[
-				"Cate",
-				"categories"
 			],
 			[
 				"repor",
@@ -163,15 +255,31 @@
 			"file": "app/controllers/reports_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2079,
+				"buffer_size": 2081,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "db/migrate/20140218082744_add_active_to_reports.rb",
+			"file": "test/controllers/reports_controller_test.rb",
 			"settings":
 			{
-				"buffer_size": 148,
+				"buffer_size": 2913,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/controllers/categories_controller_test.rb",
+			"settings":
+			{
+				"buffer_size": 1266,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/models/report_test.rb",
+			"settings":
+			{
+				"buffer_size": 2303,
 				"line_ending": "Unix"
 			}
 		},
@@ -179,7 +287,23 @@
 			"file": "test/models/category_test.rb",
 			"settings":
 			{
-				"buffer_size": 139,
+				"buffer_size": 857,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/fixtures/reports.yml",
+			"settings":
+			{
+				"buffer_size": 341,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/fixtures/categories_reports.yml",
+			"settings":
+			{
+				"buffer_size": 509,
 				"line_ending": "Unix"
 			}
 		}
@@ -248,15 +372,31 @@
 	},
 	"file_history":
 	[
-		"/D/Projects/Ruby On Rails/reporter/app/views/reports/show.html.erb",
-		"/D/Projects/Ruby On Rails/reporter/app/views/reports/index.html.erb",
-		"/D/Projects/Ruby On Rails/reporter/test/fixtures/categories.yml",
 		"/D/Projects/Ruby On Rails/reporter/test/fixtures/reports.yml",
-		"/D/Projects/Ruby On Rails/reporter/.rubocop.yml",
-		"/D/Projects/Ruby On Rails/reporter/enabled.yml",
+		"/D/Projects/Ruby On Rails/reporter/app/models/categories_report.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/views/reports/show.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/app/views/reports/_form.html.erb",
-		"/D/Projects/Ruby On Rails/reporter/app/models/category.rb",
+		"/D/Projects/Ruby On Rails/reporter/test/controllers/categories_controller_test.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/controllers/categories_controller.rb",
+		"/D/Projects/Ruby On Rails/reporter/test/fixtures/categories_reports.yml",
+		"/D/Projects/Ruby On Rails/reporter/app/views/reports/index.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/app/models/report.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/models/category.rb",
+		"/D/Projects/Ruby On Rails/reporter/test/controllers/reports_controller_test.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/controllers/application_controller.rb",
+		"/D/Projects/Ruby On Rails/reporter/test/models/category_test.rb",
+		"/D/Projects/Ruby On Rails/reporter/test/test_helper.rb",
+		"/D/Projects/Ruby On Rails/reporter/enabled.yml",
+		"/D/Projects/Ruby On Rails/reporter/disabled.yml",
+		"/D/Projects/Ruby On Rails/reporter/app/helpers/reports_helper.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/helpers/categories_helper.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/helpers/application_helper.rb",
+		"/D/Projects/Ruby On Rails/reporter/app/controllers/reports_controller.rb",
+		"/D/Projects/Ruby On Rails/reporter/test/models/report_test.rb",
+		"/D/Projects/Ruby On Rails/reporter/config/application.rb",
+		"/D/Projects/Ruby On Rails/reporter/db/migrate/20140218082744_add_active_to_reports.rb",
+		"/D/Projects/Ruby On Rails/reporter/test/fixtures/categories.yml",
+		"/D/Projects/Ruby On Rails/reporter/.rubocop.yml",
 		"/D/Projects/Ruby On Rails/reporter/reporter.sublime-project",
 		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/mhalacheva/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
@@ -268,29 +408,18 @@
 		"/D/Projects/Ruby On Rails/reporter/app/views/layouts/application.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/app/views/categories/edit.html.erb",
 		"/D/Projects/Ruby On Rails/reporter/app/views/categories/new.html.erb",
-		"/D/Projects/Ruby On Rails/reporter/app/controllers/reports_controller.rb",
-		"/D/Projects/Ruby On Rails/reporter/test/controllers/reports_controller_test.rb",
-		"/D/Projects/Ruby On Rails/reporter/test/controllers/categories_controller_test.rb",
-		"/D/Projects/Ruby On Rails/reporter/test/models/category_test.rb",
-		"/D/Projects/Ruby On Rails/reporter/test/models/report_test.rb",
-		"/D/Projects/Ruby On Rails/reporter/test/test_helper.rb",
-		"/D/Projects/Ruby On Rails/reporter/app/controllers/categories_controller.rb",
-		"/D/Projects/Ruby On Rails/reporter/app/helpers/categories_helper.rb",
 		"/D/Projects/Ruby On Rails/reporter/test/models/.keep",
 		"/D/Projects/Ruby On Rails/reporter/test/helpers/categories_helper_test.rb",
-		"/D/Projects/Ruby On Rails/reporter/app/helpers/application_helper.rb",
 		"/D/Projects/Ruby On Rails/reporter/db/migrate/20140216001456_create_categories_reports.rb",
 		"/D/Projects/Ruby On Rails/reporter/db/migrate/20140216000220_create_reports.rb",
 		"/D/Projects/Ruby On Rails/reporter/db/migrate/20140215235406_create_categories.rb",
 		"/D/Projects/Ruby On Rails/reporter/config/environments/production.rb",
 		"/D/Projects/Ruby On Rails/reporter/config/environments/test.rb",
-		"/D/Projects/Ruby On Rails/reporter/app/helpers/reports_helper.rb",
 		"/D/Projects/Ruby On Rails/reporter/app/helpers/welcome_helper.rb",
 		"/D/Projects/Ruby On Rails/reporter/config/initializers/backtrace_silencers.rb",
 		"/D/Projects/Ruby On Rails/reporter/config/initializers/filter_parameter_logging.rb",
 		"/D/Projects/Ruby On Rails/reporter/config/initializers/inflections.rb",
 		"/D/Projects/Ruby On Rails/reporter/reporter.sublime-workspace",
-		"/D/Projects/Ruby On Rails/reporter/app/controllers/application_controller.rb",
 		"/D/Projects/Ruby On Rails/reporter/config/rubocop.yml",
 		"/D/Projects/Ruby On Rails/reporter/rubocop.yml",
 		"/D/Projects/Ruby On Rails/reporter/config/routes.rb",
@@ -349,6 +478,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"report",
+			"create",
+			"@categories",
+			"documentation",
+			"category",
+			"\"",
 			"        \n",
 			"td",
 			"        <",
@@ -433,6 +568,8 @@
 		"regex": true,
 		"replace_history":
 		[
+			"allow",
+			"report",
 			"'"
 		],
 		"reverse": false,
@@ -444,7 +581,6 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
 				{
@@ -452,15 +588,15 @@
 					"file": "app/controllers/reports_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2079,
+						"buffer_size": 2081,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1994,
-								1994
+								256,
+								256
 							]
 						],
 						"settings":
@@ -470,30 +606,120 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 900.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "db/migrate/20140218082744_add_active_to_reports.rb",
+					"file": "test/controllers/reports_controller_test.rb",
 					"settings":
 					{
-						"buffer_size": 148,
+						"buffer_size": 2913,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								30,
-								30
+								370,
+								370
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"rulers":
+							[
+								100
+							],
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 30.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/controllers/categories_controller_test.rb",
+					"settings":
+					{
+						"buffer_size": 1266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								410,
+								410
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "test/models/report_test.rb",
+					"settings":
+					{
+						"buffer_size": 2303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1786,
+								1786
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 500.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "test/models/category_test.rb",
+					"settings":
+					{
+						"buffer_size": 857,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								747,
+								754
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -502,24 +728,52 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "test/models/category_test.rb",
+					"buffer": 5,
+					"file": "test/fixtures/reports.yml",
 					"settings":
 					{
-						"buffer_size": 139,
+						"buffer_size": 341,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								139,
-								139
+								204,
+								204
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "test/fixtures/categories_reports.yml",
+					"settings":
+					{
+						"buffer_size": 509,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								349,
+								349
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -563,7 +817,7 @@
 		"cols":
 		[
 			0.0,
-			0.951737451737,
+			0.950298210736,
 			1.0
 		],
 		"rows":
@@ -650,6 +904,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 244.0,
+	"side_bar_width": 274.0,
 	"status_bar_visible": true
 }

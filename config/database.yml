@@ -18,9 +18,9 @@ development:
   adapter: postgresql
   host: localhost
   port: 5432
-  username: reporter
-  password: 12345
-  database: reporter_development
+  database: <%= ENV['DB_NAME'] %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASS'] %>
   encoding: utf8
   pool: 5
   wait_timeout: 10
@@ -50,18 +50,18 @@ test:
   adapter: postgresql
   host: localhost
   port: 5432
-  username: reporter
-  password: 12345
-  database: reporter_test
+  database: <%= ENV['DB_NAME'] %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASS'] %>
   encoding: utf8
   pool: 5
   wait_timeout: 10
 
 production:
   adapter: postgresql
-  username: reporter
-  password: 12345
-  database: reporter_production
+  database: <%= ENV['DB_NAME'] %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASS'] %>
   encoding: utf8
   pool: 5
   wait_timeout: 10

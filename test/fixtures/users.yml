@@ -4,14 +4,8 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one:
-  category: categories(:travel)
-  report: reports(:hawaii)
-
-two:
-  category: categories(:fun)
-  report: reports(:hawaii)
-
-three:
-  category: categories(:politics)
-  report: reports(:protest_in_sofia)
+one: {}
+# column: value
+#
+two: {}
+#  column: value

@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -32,6 +34,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'devise'
+gem 'cancan'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
@@ -47,8 +52,27 @@ end
 group :development, :test do
   # Add Spork test server for Rails
   gem 'spork-rails'
+  # Add TestUnit support in Spork
   gem 'spork-testunit'
+
+  # Init Spork configuration file
+  # spork test --bootstrap # test hete is the directory for the testing framework
+  # spork - run the DRb test server
+
+  # Add Guard for Spork - this monitors configuration files on the filesystem and restarts the Spork server if there is a change
   gem 'guard-spork'
+  # Init Guard configuration file
+  # bundle exec guard init spork
+  # Run Guard DRb server
+  # bundle exec guard
+
+  # Other useful gems for testing
+  # gem 'cucumber-rails'
+  # gem 'factory_girl_rails'
+  # gem 'database_cleaner'
+
+  gem 'dotenv-rails'
+
   gem 'rubocop'
 end
 
@@ -60,5 +84,3 @@ platforms :ruby do
   # gems specific to linux
   gem 'unicorn'
 end
-
-ruby '2.0.0'

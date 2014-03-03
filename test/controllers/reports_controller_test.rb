@@ -3,6 +3,8 @@ require 'test_helper'
 class ReportsControllerTest < ActionController::TestCase
   setup do
     @report = reports(:hawaii)
+    # load report categories otherwise they are empty
+    @report.categories = Category.all
     @category_ids = Category.pluck(:id)
     @categories_count = Category.count
   end
@@ -54,8 +56,9 @@ class ReportsControllerTest < ActionController::TestCase
                     'should show all categories'
     end
 
-    @report.categories do |category|
-      assert_select "category_#{category.id}[checked]", true, 'report category should be checked'
+    @report.categories.each do |category|
+      assert_select "#category_#{category.id}", 1, 'report category should be present'
+      assert_select "#category_#{category.id}[checked]", true, 'report category should be checked'
     end
   end
 
@@ -65,7 +68,6 @@ class ReportsControllerTest < ActionController::TestCase
                                           location: @report.location,
                                           title: @report.title,
                                           category_ids: @category_ids }
-
     assert_equal @report.categories.size, @category_ids.size,
                  'report should have been associated with all requested categories'
     assert_redirected_to report_path(assigns(:report))

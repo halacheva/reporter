@@ -1,11 +1,15 @@
 class ReportsController < ApplicationController
+  load_and_authorize_resource
+
+  before_filter :authenticate_user!, except: [:index, :show]
+
   before_action :set_report, only: [:show, :edit, :update, :destroy]
   before_action :set_categories, only: [:new, :create, :edit, :update]
 
   # GET /reports
   # GET /reports.json
   def index
-    @reports = Report.includes(:categories).load
+    @reports = Report.includes(:categories)
   end
 
   # GET /reports/1
@@ -26,6 +30,7 @@ class ReportsController < ApplicationController
   # POST /reports.json
   def create
     @report = Report.new(report_params)
+    @report.user = current_user
 
     respond_to do |format|
       if @report.save

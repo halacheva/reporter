@@ -1,0 +1,17 @@
+<div class='action-buttons'>
+  <%= link_to 'Edit', edit_user_path(@user) %>
+  <%= link_to 'Back', users_path %>
+</div>
+
+<div class='details-container'>
+  <h2>User Details</h2>
+  <p>
+    <strong>Email:</strong>
+    <%= @user.email %>
+  </p>
+
+  <p>
+    <strong>Is Admin:</strong>
+    <%= @user.admin %>
+  </p>
+</div>

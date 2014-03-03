@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class ReportTest < ActiveSupport::TestCase
-  test 'should not create report without title, description, body and location' do
+  test 'should not allow report without title, description, body and location' do
     report = Report.new
 
     assert report.invalid?, 'report without an attribute should not be valid'
@@ -11,7 +11,7 @@ class ReportTest < ActiveSupport::TestCase
     assert report.errors[:location].any?, 'report without location should not be valid'
   end
 
-  test 'should create report with title length >= 2 chars' do
+  test 'should allow report with title length >= 2 chars' do
     report = Report.new title: 't',
                         description: 'report description',
                         body: 'body',
@@ -24,7 +24,7 @@ class ReportTest < ActiveSupport::TestCase
     assert report.valid?, 'report with name length >= 2 chars should be valid'
   end
 
-  test 'should create report with description length >= 10 chars' do
+  test 'should allow report with description length >= 10 chars' do
     report = Report.new title: 'title',
                         description: 'desc',
                         body: 'body',
@@ -38,7 +38,7 @@ class ReportTest < ActiveSupport::TestCase
     assert report.valid?, 'report with description length >= 10 chars should be valid'
   end
 
-  test 'should create report with location which contains only letters and spaces' do
+  test 'should allow report with location which contains only letters and spaces' do
     report = Report.new title: 'title',
                         description: 'report description',
                         body: 'body',

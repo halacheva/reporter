@@ -172,6 +172,15 @@ input[type='checkbox']:first-of-type {
   font-weight: bold;
 }
 
+#alert {
+  color: #BD2121;
+  font-size: 1.3em;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  font-weight: bold;
+}
+
 .field_with_errors {
   padding: 8px;
   border-radius: 4px;

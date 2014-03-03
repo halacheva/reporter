@@ -11,6 +11,7 @@
       <th>Body</th>
       <th>Location</th>
       <th>Active</th>
+      <th>Author</th>
       <th>Categories Count</th>
       <th>Actions</th>
     </tr>
@@ -24,11 +25,14 @@
         <td><%= report.body %></td>
         <td><%= report.location %></td>
         <td><%= report.active %></td>
+        <td><%= report.user.email %></td>
         <td><%= report.categories.size %></td>
         <td>
           <span><%= link_to 'Show', report %></span>
-          <span><%= link_to 'Edit', edit_report_path(report) %></span>
-          <span><%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+          <% if can? :manage, report %>
+            <span><%= link_to 'Edit', edit_report_path(report) %></span>
+            <span><%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+          <% end %>
         </td>
       </tr>
     <% end %>
