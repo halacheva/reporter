@@ -20,5 +20,16 @@ module Reporter
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.i18n.enforce_available_locales = false
+
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      :address => "mx01.melontech.com",
+      :port => 25,
+      :domain => "melontech.com"
+      # :authentication => "plain",
+      # :user_name => "",
+      # :password => "",
+      # :enable_starttls_auto => true
+    }
   end
 end
