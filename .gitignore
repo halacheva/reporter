@@ -18,3 +18,5 @@
 *.sublime-workspace
 .env
 .env.production
+/reporter.sublime-project
+/reporter.sublime-workspace
