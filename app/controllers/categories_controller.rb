@@ -76,4 +76,7 @@ class CategoriesController < ApplicationController
   def category_params
     params.require(:category).permit(:name)
   end
+
+  def test
+  end
 end
