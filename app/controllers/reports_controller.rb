@@ -1,10 +1,8 @@
 class ReportsController < ApplicationController
-  load_and_authorize_resource
-
   before_filter :authenticate_user!, except: [:index, :show]
-
-  before_action :set_report, only: [:show, :edit, :update, :destroy]
+  before_action :create_report, only: [:create]
   before_action :set_categories, only: [:new, :create, :edit, :update]
+  load_and_authorize_resource
 
   # GET /reports
   # GET /reports.json
@@ -86,5 +84,9 @@ class ReportsController < ApplicationController
   def report_params
     params.require(:report)
       .permit(:title, :description, :body, :location, :active, category_ids: [])
+  end
+
+  def create_report
+    @report = Report.new(report_params)
   end
 end

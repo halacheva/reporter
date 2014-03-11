@@ -1,9 +1,7 @@
 class CategoriesController < ApplicationController
-  load_and_authorize_resource
-
   before_filter :authenticate_user!, except: [:index, :show]
-
-  before_action :set_category, only: [:show, :edit, :update, :destroy]
+  before_action :create_category, only: [:create]
+  load_and_authorize_resource
 
   # GET /categories
   # GET /categories.json
@@ -75,5 +73,9 @@ class CategoriesController < ApplicationController
   # Never trust parameters from the scary internet, only allow the white list through.
   def category_params
     params.require(:category).permit(:name)
+  end
+
+  def create_category
+    @category = Category.new(category_params)
   end
 end
