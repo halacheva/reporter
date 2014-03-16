@@ -13,6 +13,11 @@
   </p>
 
   <p>
+    <strong>Owner:</strong>
+    <%= link_to @report.user.email, @report.user %>
+  </p>
+
+  <p>
     <strong>Description:</strong>
     <%= @report.description %>
   </p>
@@ -33,16 +38,11 @@
   </p>
 
   <p>
-    <strong>Author:</strong>
-    <%= @report.user.email %>
-  </p>
-
-  <p>
     <strong>Categories Count:</strong>
     <%= @report.categories.size %>
   </p>
 
-  <p class='categories'>
+  <p>
     <strong>Categories:</strong>
     <% @report.categories.each do |category| %>
       <span><%= link_to category.name, category %></span>

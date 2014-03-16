@@ -1,9 +1,4 @@
 <div class='page-title'>Listing categories</div>
-<% if can? :manage, Category %>
-  <div class='action-buttons'>
-    <%= link_to 'New Category', new_category_path %>
-  </div>
-<% end %>
 
 <table>
   <thead>
@@ -21,10 +16,6 @@
         <td><%= category.reports.size %></td>
         <td>
           <%= link_to 'Show', category %>
-          <% if can? :manage, Category %>
-            <%= link_to 'Edit', edit_category_path(category) %>
-            <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %>
-          <% end %>
         </td>
       </tr>
     <% end %>

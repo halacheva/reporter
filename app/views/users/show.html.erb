@@ -1,8 +1,3 @@
-<div class='action-buttons'>
-  <%= link_to 'Edit', edit_user_path(@user) %>
-  <%= link_to 'Back', users_path %>
-</div>
-
 <div class='details-container'>
   <h2>User Details</h2>
   <p>
@@ -11,7 +6,14 @@
   </p>
 
   <p>
-    <strong>Is Admin:</strong>
-    <%= @user.admin %>
+    <strong>Reports Count:</strong>
+    <%= @user.reports.count %>
+  </p>
+
+  <p>
+    <strong>Reports:</strong>
+    <% @user.reports.each do |report| %>
+      <span><%= link_to report.title, report %></span>
+    <% end %>
   </p>
 </div>

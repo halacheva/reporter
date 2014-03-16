@@ -7,11 +7,11 @@
   <thead>
     <tr>
       <th>Title</th>
+      <th>Owner</th>
       <th>Description</th>
       <th>Body</th>
       <th>Location</th>
       <th>Active</th>
-      <th>Author</th>
       <th>Categories Count</th>
       <th>Actions</th>
     </tr>
@@ -21,11 +21,11 @@
     <% @reports.each do |report| %>
       <tr>
         <td><%= report.title %></td>
+        <td><%= report.user.email %></td>
         <td><%= report.description %></td>
         <td><%= report.body %></td>
         <td><%= report.location %></td>
         <td><%= report.active %></td>
-        <td><%= report.user.email %></td>
         <td><%= report.categories.size %></td>
         <td>
           <span><%= link_to 'Show', report %></span>
