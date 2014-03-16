@@ -3,6 +3,8 @@ Reporter::Application.routes.draw do
              :path => '/',
              :path_names => { :sign_in => 'sign_in', :sign_out => 'sign_out' }
 
+  ActiveAdmin.routes(self)
+
   root :to => 'reports#index'
 
   resources :reports
