@@ -42,6 +42,14 @@ gem 'cancan'
 # Administration
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+# Fileupload
+gem 'paperclip', '~> 4.1'
+# Upload files to Dropbox
+gem 'paperclip-dropbox', '>= 1.1.7'
+# Run image processing in the background
+gem 'delayed_job', '~> 4.0.0'
+gem 'delayed_paperclip', '~> 2.7.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

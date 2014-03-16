@@ -1,8 +1,24 @@
+<div class='action-buttons'>
+  <% if can? :manage, @user %>
+    <%= link_to 'Edit', edit_user_path(@user) %>
+  <% end %>
+</div>
+
 <div class='details-container'>
   <h2>User Details</h2>
   <p>
     <strong>Email:</strong>
     <%= @user.email %>
+  </p>
+
+  <p>
+    <strong>Avatar:</strong>
+    <%= image_tag @user.avatar.url(:profile) %>
+  </p>
+
+  <p>
+    <strong>Avatar:</strong>
+    <%= image_tag @user.avatar.url(:thumb) %>
   </p>
 
   <p>

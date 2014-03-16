@@ -1,0 +1,7 @@
+app_key: 6gsdtbgvnkfotjr
+app_secret: jzoy7em365egg51
+access_token: 072gx6vlt2bbisle
+access_token_secret: 7pm1yhllpbc3bl9
+user_id: 93562684
+access_type: app_folder
+# rake dropbox:authorize APP_KEY=6gsdtbgvnkfotjr APP_SECRET=jzoy7em365egg51 ACCESS_TYPE=app_folder
