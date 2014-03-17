@@ -48,4 +48,11 @@
       <span><%= link_to category.name, category %></span>
     <% end %>
   </p>
+
+  <p>
+    <strong>Images:</strong>
+    <% @report.images.each do |image| %>
+      <span><%= image_tag image.file.url(:medium) %><%= image.label %></span>
+    <% end %>
+  </p>
 </div>

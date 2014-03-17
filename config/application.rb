@@ -13,7 +13,7 @@ module Reporter
     # -- all .rb files in that directory are automatically loaded.
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
-    # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
+    # Run 'rake -D time' for a list of tasks for finding time zone names. Default is UTC.
     # config.time_zone = 'Central Time (US & Canada)'
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
@@ -23,12 +23,12 @@ module Reporter
 
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
-      :address => "mx01.melontech.com",
-      :port => 25,
-      :domain => "melontech.com"
-      # :authentication => "plain",
-      # :user_name => "",
-      # :password => "",
+      address: 'mx01.melontech.com',
+      port: 25,
+      domain: 'melontech.com'
+      # :authentication => 'plain',
+      # :user_name => '',
+      # :password => '',
       # :enable_starttls_auto => true
     }
   end

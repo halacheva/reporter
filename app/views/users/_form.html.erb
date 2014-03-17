@@ -13,6 +13,10 @@
 
   <div class="field">
     <%= f.label :avatar %><br>
+    <% unless @user.avatar.blank? %>
+      <%= image_tag @user.avatar.url(:thumb) %><br>
+      <%= f.check_box :delete_avatar %>Delete<br>
+    <% end %>
     <%= f.file_field :avatar %>
   </div>
 

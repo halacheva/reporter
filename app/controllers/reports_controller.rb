@@ -7,7 +7,7 @@ class ReportsController < ApplicationController
   # GET /reports
   # GET /reports.json
   def index
-    @reports = Report.includes(:categories)
+    @reports = Report.includes(:categories, :images)
   end
 
   # GET /reports/1
@@ -18,10 +18,12 @@ class ReportsController < ApplicationController
   # GET /reports/new
   def new
     @report = Report.new
+    @report.images.build
   end
 
   # GET /reports/1/edit
   def edit
+    @report.images.build
   end
 
   # POST /reports
@@ -83,7 +85,8 @@ class ReportsController < ApplicationController
   # only allow the white list through.
   def report_params
     params.require(:report)
-      .permit(:title, :description, :body, :location, :active, category_ids: [])
+      .permit(:title, :description, :body, :location, :active,
+              images_attributes: [:id, :label, :file, :_destroy], category_ids: [])
   end
 
   def create_report

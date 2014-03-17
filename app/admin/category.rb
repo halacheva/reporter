@@ -24,8 +24,8 @@ ActiveAdmin.register Category do
       row :reports_count do |category|
         category.reports.size
       end
-      table_for category.reports, :class => 'index_table' do
-        column "Reports" do |report|
+      table_for category.reports, class: 'index_table' do
+        column 'Reports' do |report|
           link_to report.title, report
         end
       end
@@ -36,7 +36,7 @@ ActiveAdmin.register Category do
   filter :reports, as: :check_boxes
 
   form do |f|
-    f.inputs "Category Details" do
+    f.inputs 'Category Details' do
       f.input :name
     end
     f.actions

@@ -1,11 +1,11 @@
-ActiveAdmin.register_page "Dashboard" do
+ActiveAdmin.register_page 'Dashboard' do
 
-  menu priority: 1, label: proc{ I18n.t("active_admin.dashboard") }
+  menu priority: 1, label: proc { I18n.t('active_admin.dashboard') }
 
-  content title: "Dashboard" do
+  content title: 'Dashboard' do
     columns do
       column do
-        panel "Statistics" do
+        panel 'Statistics' do
           ul do
             li "<b>Total reports: #{Report.count}</b>".html_safe
             li "<b>Total categories: #{Category.count}</b>".html_safe
@@ -15,7 +15,7 @@ ActiveAdmin.register_page "Dashboard" do
       end
 
       column do
-        panel "Recent Reports" do
+        panel 'Recent Reports' do
           ul do
             Report.last(5).each do |report|
               li link_to(report.title, report)

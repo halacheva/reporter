@@ -34,7 +34,8 @@ class Ability
       can :manage, :all
     else
       can :read, [Report, Category]
-      can :manage, Report, :user_id => user.id
+      can :manage, Report, user_id: user.id
+      can :manage, User, id: user.id
     end
   end
 end
