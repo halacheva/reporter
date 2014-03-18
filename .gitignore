@@ -20,3 +20,5 @@
 .env.production
 /reporter.sublime-project
 /reporter.sublime-workspace
+/.env.development
+/.env.test
