@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
 
   # Validate filename
-  validates_attachment_file_name :avatar, matches: [/png\Z/, /jpe?g\Z/i]
+  validates_attachment_file_name :avatar, matches: [/png\Z/i, /jpe?g\Z/i]
 
   process_in_background :avatar, only_process: [:profile]
 
