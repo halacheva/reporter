@@ -1,7 +1,8 @@
 Reporter::Application.routes.draw do
   devise_for :users,
              path: '/',
-             path_names: { sign_in: 'sign_in', sign_out: 'sign_out' }
+             path_names: { sign_in: 'sign_in', sign_out: 'sign_out' },
+             controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
   ActiveAdmin.routes(self)
 

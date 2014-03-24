@@ -50,6 +50,9 @@ gem 'paperclip-dropbox', '>= 1.1.7'
 gem 'delayed_job', '~> 4.0.0'
 gem 'delayed_paperclip', '~> 2.7.0'
 
+# Facebook integration
+gem 'omniauth-facebook', '~> 1.6.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

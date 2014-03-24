@@ -23,6 +23,7 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
     padding: 10px;
     font-weight: bold;
     letter-spacing: 2px;
+    display: none;
   }
 
   div#reporter_logo {
@@ -168,7 +169,7 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
     color: #5EB87B;
     font-size: 1.3em;
     position: absolute;
-    top: 70px;
+    top: 100px;
     left: 10px;
     font-weight: bold;
   }
@@ -177,7 +178,7 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
     color: #BD2121;
     font-size: 1.3em;
     position: absolute;
-    top: 70px;
+    top: 100px;
     left: 10px;
     font-weight: bold;
   }
