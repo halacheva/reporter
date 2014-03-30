@@ -17,6 +17,9 @@ ActiveAdmin.register User do
     column :avatar do |user|
       image_tag(user.avatar.url(:thumb))
     end
+    column :facebook_profile_linked do |user|
+      status_tag(user.provider.to_s.downcase == 'facebook' ? 'YES' : 'NO')
+    end
     column :current_sign_in_at
     column :current_sign_in_ip
     column :registration_date, :created_at
@@ -34,6 +37,9 @@ ActiveAdmin.register User do
       end
       row :admin do |user|
         status_tag(user.admin ? 'YES' : 'NO')
+      end
+      row :facebook_profile_linked do |user|
+        status_tag(user.provider.to_s.downcase == 'facebook' ? 'YES' : 'NO')
       end
       row :sign_in_count
       row :current_sign_in_at
