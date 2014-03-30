@@ -13,10 +13,10 @@ class Video < ActiveRecord::Base
                     processors: [:ffmpeg]
 
   # Validate content type
-  validates_attachment_content_type :video, :content_type => ['video/avi','video/mpe?g4?']
+  validates_attachment_content_type :file, :content_type => ['video/avi','video/mpe?g4?']
 
   # Validate filename
-  validates_attachment_file_name :video, :matches => [/mpe?g4?\Z/, /avi\Z/]
+  validates_attachment_file_name :file, :matches => [/mpe?g4?\Z/, /avi\Z/]
 
   process_in_background :file, only_process: [:medium]
 

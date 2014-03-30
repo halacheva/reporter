@@ -50,9 +50,19 @@
   </p>
 
   <p>
-    <strong>Images:</strong>
+    <strong>Media:</strong>
     <% @report.media.each do |medium| %>
-      <span><%= image_tag medium.attachable.file.url(:medium) %><%= medium.label %></span>
+      <% if medium.attachable_type == 'Image' %>
+        <span><%= image_tag medium.attachable.file.url(:medium) %><%= medium.label %></span>
+      <% else %>
+        <span>
+          <video controls>
+            <source src="<%= medium.attachable.file.url(:medium) %>" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <%= medium.label %>
+        </span>
+      <% end %>
     <% end %>
   </p>
   <div class='fb-comments' data-href='<%= report_url(@report)%>' data-numposts='5'
