@@ -35,6 +35,7 @@ class Ability
     else
       can :read, [Report, Category]
       can :manage, Report, user_id: user.id
+      can :create, Report
       can :manage, User, id: user.id
     end
   end
