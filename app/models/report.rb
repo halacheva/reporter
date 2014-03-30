@@ -9,7 +9,6 @@ class Report < ActiveRecord::Base
 
   belongs_to :user
 
-  has_many :images
-
-  accepts_nested_attributes_for :images, allow_destroy: true, reject_if: :all_blank
+  has_many :media, -> { order('position ASC') }, dependent: :destroy
+  accepts_nested_attributes_for :media, allow_destroy: true, reject_if: :all_blank
 end

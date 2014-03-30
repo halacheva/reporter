@@ -43,18 +43,18 @@
 
   <div class="field">
     <ul>
-      <%= f.fields_for :images do |images_form| %>
+      <%= f.fields_for :media do |media_form| %>
         <li>
-          <%= images_form.label :label %><br>
-          <%= images_form.text_field :label %><br>
+          <%= media_form.label :label %><br>
+          <%= media_form.text_field :label %><br>
 
-          <% unless images_form.object.file.blank? %>
-            <%= image_tag images_form.object.file.url(:thumb) %><br>
-            <%= images_form.check_box :_destroy %>Delete<br>
+          <% unless media_form.object.attachable.blank? %>
+            <%= image_tag media_form.object.attachable.file.url(:thumb) %><br>
+            <%= media_form.check_box :_destroy %>Delete<br>
           <% end %>
 
-          <%= images_form.label :file %><br>
-          <%= images_form.file_field :file %><br>
+          <%= media_form.label :file %><br>
+          <%= media_form.file_field :file %><br>
         </li>
       <% end %>
     </ul>

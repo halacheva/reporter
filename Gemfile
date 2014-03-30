@@ -44,6 +44,8 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 
 # Fileupload
 gem 'paperclip', '~> 4.1'
+# Process videos with ffmpeg
+gem 'paperclip-ffmpeg', '~> 1.0.1'
 # Upload files to Dropbox
 gem 'paperclip-dropbox', '>= 1.1.7'
 # Run image processing in the background
@@ -53,6 +55,8 @@ gem 'delayed_paperclip', '~> 2.7.0'
 # Facebook integration
 gem 'omniauth-facebook', '~> 1.6.0'
 
+# Handle order of items
+gem 'acts_as_list', '~> 0.4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

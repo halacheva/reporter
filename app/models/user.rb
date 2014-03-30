@@ -9,8 +9,8 @@ class User < ActiveRecord::Base
 
   has_attached_file :avatar,
                     styles: { profile: '200x200>', thumb: '100x100#' },
-                    path: '/system/:class/:attachment/:id_partition/:style/:hash_:filename',
-                    url: '/system/:class/:attachment/:id_partition/:style/:hash_:filename',
+                    path: '/system/:class/:attachment/:id_partition/:style/:hash',
+                    url: '/system/:class/:attachment/:id_partition/:style/:hash',
                     default_url: '/images/:style/missing.png',
                     hash_secret: 'HiperMegaSecretString',
                     storage: :dropbox,

@@ -7,7 +7,7 @@ class ReportsController < ApplicationController
   # GET /reports
   # GET /reports.json
   def index
-    @reports = Report.includes(:categories, :images)
+    @reports = Report.includes(:categories, :media)
   end
 
   # GET /reports/1
@@ -18,12 +18,12 @@ class ReportsController < ApplicationController
   # GET /reports/new
   def new
     @report = Report.new
-    @report.images.build
+    3.times { @report.media.build }
   end
 
   # GET /reports/1/edit
   def edit
-    @report.images.build
+    3.times { @report.media.build }
   end
 
   # POST /reports
@@ -86,7 +86,7 @@ class ReportsController < ApplicationController
   def report_params
     params.require(:report)
       .permit(:title, :description, :body, :location, :active,
-              images_attributes: [:id, :label, :file, :_destroy], category_ids: [])
+              media_attributes: [:id, :label, :file, :_destroy], category_ids: [])
   end
 
   def create_report

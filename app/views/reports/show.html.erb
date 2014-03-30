@@ -51,8 +51,8 @@
 
   <p>
     <strong>Images:</strong>
-    <% @report.images.each do |image| %>
-      <span><%= image_tag image.file.url(:medium) %><%= image.label %></span>
+    <% @report.media.each do |medium| %>
+      <span><%= image_tag medium.attachable.file.url(:medium) %><%= medium.label %></span>
     <% end %>
   </p>
   <div class='fb-comments' data-href='<%= report_url(@report)%>' data-numposts='5'

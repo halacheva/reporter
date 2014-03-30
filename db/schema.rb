@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140324201736) do
+ActiveRecord::Schema.define(version: 20140330220811) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,14 +28,22 @@ ActiveRecord::Schema.define(version: 20140324201736) do
   end
 
   create_table "images", force: true do |t|
-    t.integer  "report_id"
-    t.string   "label"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "file_file_name"
     t.string   "file_content_type"
     t.integer  "file_file_size"
     t.datetime "file_updated_at"
+  end
+
+  create_table "media", force: true do |t|
+    t.integer  "report_id"
+    t.string   "label"
+    t.integer  "attachable_id"
+    t.string   "attachable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "position"
   end
 
   create_table "reports", force: true do |t|
@@ -73,5 +81,14 @@ ActiveRecord::Schema.define(version: 20140324201736) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "videos", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
+  end
 
 end
