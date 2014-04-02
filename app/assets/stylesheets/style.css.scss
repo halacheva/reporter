@@ -5,31 +5,13 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
 
 .reporter-application {
   header {
-    background: #585858;
     width: 100%;
-    padding: 10px;
-    box-shadow: -4px 4px 3px #585858;
-  }
-
-  footer {
-    background: #585858;
-    box-shadow: -4px -4px 3px #585858;
-    color: #AC99B1;
-    text-shadow: 3px 3px 6px #281F2A;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 1.4em;
-    padding: 10px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    display: none;
+    padding: 15px;
   }
 
   div#reporter_logo {
     letter-spacing: 2px;
-    color: #AC99B1;
-    text-shadow: 3px 3px 6px #281F2A;
+    color: rgba(4, 171, 244, 0.5);
     font-size: 3em;
     font-weight: bold;
   }
@@ -41,44 +23,43 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
   }
 
   nav a {
-    background: rgba(172, 153, 177, 0.5);
+    background: rgba(4, 171, 244, 0.5);
     font-size: 1.5em;
-    height: 70px;
-    color: #585858;
+    height: 35px;
+    color: #FFFFFF;
     display: table-cell;
     vertical-align: bottom;
   }
 
   nav a:hover {
-    background: rgba(172, 153, 177, 0.8);
+    background: rgba(17, 156, 142, 0.5);
   }
 
   a {
     text-decoration: none;
     margin: 0;
     padding: 9px 16px;
-    background: rgba(133, 113, 138, 0.3);
-    color: #85718A;
+    background: rgba(4, 171, 244, 0.5);
+    color: #117B93;
     display: inline-block;
     font-weight: bold;
   }
 
   a:hover {
-    background: rgba(133, 113, 138, 0.6);
+    background: rgba(127, 203, 236, 0.5);
   }
 
   table {
     font-size: 1.3em;
     color: #585858;
     border-spacing: 0;
-    margin: 70px 0 33px;
+    margin: 110px 0 33px;
     width: 100%;
     text-align: center;
   }
 
   thead tr, th {
-    background: #85718A;
-    color: #fff;
+    color: #117B93;
   }
 
   tbody tr:nth-child(odd) {
@@ -91,7 +72,6 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
 
   th, td {
     padding: 4px 6px;
-    box-shadow: 0px 1px 5px #85718A;
   }
 
   div.page-title {
@@ -128,7 +108,7 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
   input[type='text'], textarea {
     width: 400px;
     outline: none;
-    border: 1px solid #AC99B1;
+    border: 1px solid #117B93;
     line-height: 20px;
     height: 25px;
     border-radius: 4px;
@@ -137,7 +117,7 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
   }
 
   input[type='text']:focus, textarea:focus {
-    box-shadow: 0px 0px 9px #AC99B1;
+    box-shadow: 0px 0px 9px #A9DFEC;
   }
 
   textarea {
@@ -148,10 +128,10 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
     color: #fff;
     padding: 4px 6px;
     margin: 20px 0px;
-    background: #85718A;
+    background: #117B93;
     outline: none;
     border: none;
-    box-shadow: 2px 1px 7px #585858;
+    box-shadow: 2px 1px 7px #A9DFEC;
     font-weight: bold;
     cursor: pointer;
     border-radius: 4px;
@@ -226,12 +206,6 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
       padding: 10px;
       font-weight: normal;
       margin: 2px 5px;
-    }
-    p:nth-child(odd) {
-      background: rgba(172, 153, 177, 0.3);
-    }
-    p:nth-child(even) {
-      background: rgba(172, 153, 177, 0.5);
     }
     span a {
       background: #fff;

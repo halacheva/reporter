@@ -59,7 +59,7 @@ ActiveAdmin.register Report do
       table_for report.media, class: 'index_table' do
         column 'Medium' do |medium|
           (content_tag(:span, medium.label).to_s +
-           image_tag(medium.attachable.file.url(:medium)).to_s).html_safe
+           image_tag(medium.attachable.file.url(:thumb)).to_s).html_safe
         end
       end
     end
