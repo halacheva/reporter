@@ -69,6 +69,26 @@ class ReportsController < ApplicationController
     end
   end
 
+  def rate
+    rate = Rating.find_by(['user_id = ? AND report_id = ?', current_user.id, params[:id]])
+    if rate
+      rate.rating = params[:report][:rating]
+      rate.save
+    else
+      Rating.create(rating: params[:report][:rating],
+                    report_id: params[:id],
+                    user_id: current_user.id)
+    end
+
+    respond_to do |format|
+      if @report.update(report_params)
+        format.json { render json: { rating: @report.rating }, status: :ok }
+      else
+        format.json { render json: @report.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
   private
 
   # Use callbacks to share common setup
@@ -85,7 +105,7 @@ class ReportsController < ApplicationController
   # only allow the white list through.
   def report_params
     params.require(:report)
-      .permit(:title, :description, :body, :location, :active,
+      .permit(:title, :description, :body, :location, :active, :rating,
               media_attributes: [:id, :label, :file, :_destroy], category_ids: [])
   end
 

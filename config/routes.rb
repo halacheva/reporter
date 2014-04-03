@@ -8,7 +8,9 @@ Reporter::Application.routes.draw do
 
   root to: 'reports#index'
 
-  resources :reports
+  resources :reports do
+    post 'rate', on: :member
+  end
 
   resources :categories, only: [:index, :show]
 

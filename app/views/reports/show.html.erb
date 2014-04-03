@@ -65,6 +65,22 @@
       <% end %>
     <% end %>
   </p>
+  <% if can? :rate, @report %>
+    <p>
+      Rate me:
+      <%= link_to '1', rate_report_path(@report.id, report: { rating: 1 }),
+                  remote: true, method: :post, class: 'rating-link' %>
+      <%= link_to '2', rate_report_path(@report.id, report: { rating: 2 }),
+                  remote: true, method: :post, class: 'rating-link' %>
+      <%= link_to '3', rate_report_path(@report.id, report: { rating: 3 }),
+                  remote: true, method: :post, class: 'rating-link' %>
+      <%= link_to '4', rate_report_path(@report.id, report: { rating: 4 }),
+                  remote: true, method: :post, class: 'rating-link' %>
+      <%= link_to '5', rate_report_path(@report.id, report: { rating: 5 }),
+                  remote: true, method: :post, class: 'rating-link' %>
+      Rating: <span id='rating'><%= @report.rating %></span>
+    </p>
+  <% end %>
   <div class='fb-comments' data-href='<%= report_url(@report)%>' data-numposts='5'
        data-colorscheme='light'></div>
   <div class='fb-like' data-href='<%= report_url(@report) %>'

@@ -5,7 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, :omniauth_providers => [:facebook]
 
-  has_many :reports,  dependent: :destroy
+  has_many :reports, dependent: :destroy
+  has_many :ratings, dependent: :destroy
 
   has_attached_file :avatar,
                     styles: { profile: '200x200>', thumb: '100x100#' },
