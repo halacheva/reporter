@@ -1,7 +1,7 @@
 class Report < ActiveRecord::Base
   validates :title, :description, :body, :location, presence: true
   validates :title, :location, length: { minimum: 2 }
-  validates :description, length: { minimum: 10 }
+  validates :description, length: { in: 10..255 }
   validates :location, format: { with: /\A[a-zA-Z\s]*\z/, message: 'should contains only letters' }
 
   has_many :categories_reports,  dependent: :destroy
@@ -13,7 +13,7 @@ class Report < ActiveRecord::Base
   has_many :media, -> { order('position ASC') }, dependent: :destroy
   accepts_nested_attributes_for :media, allow_destroy: true, reject_if: :all_blank
 
-  before_save :calculate_rating
+  before_save :calculate_rating, unless: :new_record?
 
   private
 

@@ -8,8 +8,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body class='reporter-application'>
+<div class='fog'><span><span></div>
 <header>
-  <div id='reporter_logo'>Reporter</div>
   <nav>
     <%= link_to 'Reports', reports_path %>
     <%= link_to 'Categories', categories_path %>
@@ -26,12 +26,15 @@
       <%= link_to 'Sign in with Facebook', user_omniauth_authorize_path(:facebook) %>
     <% end %>
   </nav>
+  <% if user_signed_in? %>
+    <span class='user-info'><%= link_to current_user.email, current_user %></span>
+  <% end %>
 </header>
 <div id='fb-root'></div>
 <p id='notice'><%= notice %></p>
 <p id='alert'><%= alert %></p>
+
 <%= yield %>
 
-<footer> Copyright &copy; Reporter <%= Time.now.year %></footer>
 </body>
 </html>

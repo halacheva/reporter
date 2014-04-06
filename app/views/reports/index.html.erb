@@ -1,51 +1,45 @@
-<div class='action-buttons'>
-  <%= link_to 'New Report', new_report_path %>
+<ul class='reports-list'>
+  <% @reports.each do |report| %>
+    <li class='info'>
+      <div class='title'>
+        <%= link_to report.title, report %>
+        by
+        <%= link_to report.user.email, report.user %>
+        from
+        <%= link_to report.location, '#' %>
+        <span class='media-count'><%= report.media.size %></span>
+      </div>
+      <div class='media'>
+        <% if report.media.blank? %>
+          N / A
+        <% else %>
+          <%= image_tag report.media.first.attachable.file.url(:thumb) %>
+        <% end %>
+      </div>
+      <div class='description'>
+        <%= report.description %>
+      </div>
+      <div class='rating'>
+        <%= report.rating %>
+      </div>
+      <div class='categories'>
+        <% report.categories.each do |category| %>
+          <%= link_to category.name, category %>
+        <% end %>
+      </div>
+      <div>
+      <% if can? :manage, report %>
+        <span><%= link_to 'Edit', edit_report_path(report) %></span>
+        <span>
+          <%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </span>
+      <% end %>
+      </div>
+    </li>
+  <% end %>
+</ul>
+<div class='sidebar'>
+  <div class='create-report'>
+    <%= link_to 'Create Report', new_report_path %>
+  </div>
 </div>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Image</th>
-      <th>Owner</th>
-      <th>Description</th>
-      <th>Body</th>
-      <th>Location</th>
-      <th>Active</th>
-      <th>Categories Count</th>
-      <th>Images Count</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @reports.each do |report| %>
-      <tr>
-        <td><%= report.title %></td>
-        <td>
-          <% if report.media.blank? %>
-            N / A
-          <% else %>
-            <%= image_tag report.media.first.attachable.file.url(:thumb) %>
-          <% end %>
-        </td>
-        <td><%= report.user.email %></td>
-        <td><%= report.description %></td>
-        <td><%= report.body %></td>
-        <td><%= report.location %></td>
-        <td><%= report.active %></td>
-        <td><%= report.categories.size %></td>
-        <td><%= report.media.size %></td>
-        <td>
-          <span><%= link_to 'Show', report %></span>
-          <% if can? :manage, report %>
-            <span><%= link_to 'Edit', edit_report_path(report) %></span>
-            <span>
-              <%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %>
-            </span>
-          <% end %>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>

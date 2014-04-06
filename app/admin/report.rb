@@ -25,6 +25,7 @@ ActiveAdmin.register Report do
     column :description
     column :body
     column :location
+    column :rating
     column :active
     column :categories_count do |report|
       report.categories.size
@@ -42,6 +43,7 @@ ActiveAdmin.register Report do
       row :description
       row :body
       row :location
+      row :rating
       row :active do |report|
         status_tag(report.active ? 'YES' : 'NO')
       end
@@ -69,6 +71,7 @@ ActiveAdmin.register Report do
   filter :description
   filter :location
   filter :categories, as: :check_boxes
+  filter :rating
 
   form do |f|
     f.inputs 'Report Details' do
