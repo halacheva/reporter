@@ -51,19 +51,17 @@
 
   <p>
     <strong>Media:</strong>
-    <% @report.media.each do |medium| %>
-      <% if medium.attachable_type == 'Image' %>
-        <span><%= image_tag medium.attachable.file.url(:medium) %><%= medium.label %></span>
-      <% else %>
-        <span>
-          <video controls>
-            <source src="<%= medium.attachable.file.url(:medium) %>" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <%= medium.label %>
-        </span>
+    <ul class="gallery clearfix">
+      <% @report.media.each do |medium| %>
+        <% size_attr = medium.attachable_type == 'Video' ? '?width=1024&height=768' : '' %>
+        <li>
+          <%= link_to image_tag(medium.attachable.file.url(:thumb), alt: medium.label),
+                      medium.attachable.file.url(:medium) + size_attr,
+                      rel: 'prettyPhoto[mixed]',
+                      title: medium.label %>
+        </li>
       <% end %>
-    <% end %>
+    </ul>
   </p>
   <% if can? :rate, @report %>
     <p>
@@ -81,8 +79,6 @@
       Rating: <span id='rating'><%= @report.rating %></span>
     </p>
   <% end %>
-  <div class='fb-comments' data-href='<%= report_url(@report)%>' data-numposts='5'
-       data-colorscheme='light'></div>
   <div class='fb-like' data-href='<%= report_url(@report) %>'
      data-layout='standard' data-action='like'
      data-show-faces='true' data-share='true'></div>
