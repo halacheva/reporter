@@ -20,14 +20,17 @@
         <%= report.description %>
       </div>
       <div class='rating'>
-        <%= report.rating %>
+        <div class='rateit'
+             data-rateit-value='<%= report.rating %>'
+             data-rateit-ispreset='true'
+             data-rateit-readonly='true'></div>
       </div>
       <div class='categories'>
         <% report.categories.each do |category| %>
           <%= link_to category.name, category %>
         <% end %>
       </div>
-      <div>
+      <div class='actions'>
       <% if can? :manage, report %>
         <span><%= link_to 'Edit', edit_report_path(report) %></span>
         <span>

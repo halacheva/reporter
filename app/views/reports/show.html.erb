@@ -6,80 +6,56 @@
 </div>
 
 <div class='details-container'>
-  <h2>Report Details</h2>
-  <p>
-    <strong>Title:</strong>
+  <div class='title'>
     <%= @report.title %>
-  </p>
-
-  <p>
-    <strong>Owner:</strong>
-    <%= link_to @report.user.email, @report.user %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
+  </div>
+  <div class='description'>
     <%= @report.description %>
-  </p>
-
-  <p>
-    <strong>Body:</strong>
-    <%= @report.body %>
-  </p>
-
-  <p>
-    <strong>Location:</strong>
-    <%= @report.location %>
-  </p>
-
-  <p>
-    <strong>Active:</strong>
-    <%= @report.active %>
-  </p>
-
-  <p>
-    <strong>Categories Count:</strong>
-    <%= @report.categories.size %>
-  </p>
-
-  <p>
-    <strong>Categories:</strong>
-    <% @report.categories.each do |category| %>
-      <span><%= link_to category.name, category %></span>
+  </div>
+  <ul class='gallery'>
+    <% @report.media.each do |medium| %>
+      <% size_attr = medium.attachable_type == 'Video' ? '?width=1024&height=768' : '' %>
+      <li>
+        <%= link_to image_tag(medium.attachable.file.url(:thumb), alt: medium.label),
+                    medium.attachable.file.url(:medium) + size_attr,
+                    rel: 'prettyPhoto[mixed]',
+                    title: medium.label %>
+      </li>
     <% end %>
-  </p>
+  </ul>
+  <div class='rating'>
+    <% if user_signed_in? %>
+      <div id='rate_it' class='rateit'
+           data-rateit-value='<%= @report.rating %>'
+           data-rateit-ispreset='true'
+           data-report-id='<%= @report.id %>'></div>
+    <% else %>
+      <div class='rateit' data-rateit-value='<%= @report.rating %>'
+           data-rateit-ispreset='true' data-rateit-readonly='true'></div>
+    <% end %>
+  </div>
+  <div class='location'>
+    <%= @report.location %>
+  </div>
+  <div class='categories'>
+    <% @report.categories.each do |category| %>
+      <%= link_to category.name, category %>
+    <% end %>
+  </div>
+  <div class='body'>
+    <%= @report.body %>
+  </div>
+  <div class='actions'>
+    <% if can? :manage, @report %>
+      <span><%= link_to 'Edit', edit_report_path(@report) %></span>
+      <span>
+        <%= link_to 'Destroy', @report, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </span>
+    <% end %>
+  </div>
+<div>
 
-  <p>
-    <strong>Media:</strong>
-    <ul class="gallery clearfix">
-      <% @report.media.each do |medium| %>
-        <% size_attr = medium.attachable_type == 'Video' ? '?width=1024&height=768' : '' %>
-        <li>
-          <%= link_to image_tag(medium.attachable.file.url(:thumb), alt: medium.label),
-                      medium.attachable.file.url(:medium) + size_attr,
-                      rel: 'prettyPhoto[mixed]',
-                      title: medium.label %>
-        </li>
-      <% end %>
-    </ul>
-  </p>
-  <% if can? :rate, @report %>
-    <p>
-      Rate me:
-      <%= link_to '1', rate_report_path(@report.id, report: { rating: 1 }),
-                  remote: true, method: :post, class: 'rating-link' %>
-      <%= link_to '2', rate_report_path(@report.id, report: { rating: 2 }),
-                  remote: true, method: :post, class: 'rating-link' %>
-      <%= link_to '3', rate_report_path(@report.id, report: { rating: 3 }),
-                  remote: true, method: :post, class: 'rating-link' %>
-      <%= link_to '4', rate_report_path(@report.id, report: { rating: 4 }),
-                  remote: true, method: :post, class: 'rating-link' %>
-      <%= link_to '5', rate_report_path(@report.id, report: { rating: 5 }),
-                  remote: true, method: :post, class: 'rating-link' %>
-      Rating: <span id='rating'><%= @report.rating %></span>
-    </p>
-  <% end %>
-  <div class='fb-like' data-href='<%= report_url(@report) %>'
-     data-layout='standard' data-action='like'
-     data-show-faces='true' data-share='true'></div>
-</div>
+<div class='fb-like' data-href='<%= report_url(@report) %>'
+   data-layout='standard' data-action='like'
+   data-show-faces='true' data-share='true'></div>
+

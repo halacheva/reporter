@@ -13,11 +13,13 @@ class Report < ActiveRecord::Base
   has_many :media, -> { order('position ASC') }, dependent: :destroy
   accepts_nested_attributes_for :media, allow_destroy: true, reject_if: :all_blank
 
-  before_save :calculate_rating, unless: :new_record?
+  before_save :calculate_rating
 
   private
 
   def calculate_rating
-    rating = self.ratings.inject(0) {|sum, i| sum + i.rating } / self.ratings.size
+    if self.ratings.size > 0
+      self.rating = self.ratings.inject(0) {|sum, i| sum + i.rating } / self.ratings.size
+    end
   end
 end

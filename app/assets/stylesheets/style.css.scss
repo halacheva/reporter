@@ -17,7 +17,7 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
       width: 100px;
       height: 100px;
       display: block;
-      margin: 20% auto 0;
+      margin: 200px auto 0;
     }
   }
 
@@ -55,14 +55,28 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
     }
   }
 
+  #notice, #alert {
+    position: absolute;
+    top: 36px;
+    left: 30px;
+  }
+
+  #notice {
+    color: green;
+  }
+
+  #alert {
+    color: red;
+  }
+
   a { color: #fff; }
 
   ul.reports-list {
     list-style: none;
     overflow: hidden;
-    width: 78%;
+    width: 66%;
     float: left;
-    margin-top: 25px;
+    margin-top: 50px;
 
     li.info {
       color: #0D4744;
@@ -84,6 +98,7 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
         border-radius: 10px 10px 0 0;
         span.media-count {
           float: right;
+          background: url(camera.png);
         }
       }
       div.media {
@@ -113,6 +128,11 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
           border-radius: 5px;
         }
       }
+      div.actions {
+        top: -30px;
+        position: relative;
+        left: 286px;
+      }
     }
   }
 
@@ -122,7 +142,7 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
     background: #0D4744;
     float: right;
     overflow: hidden;
-    margin-top: 12px;
+    margin-top: 30px;
 
     div.create-report {
       margin: 20px 10px;
@@ -136,6 +156,63 @@ body, textarea, input, select, option, button { color: #000; font-family: Helvet
         box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
         border-radius: 8px;
       }
+    }
+  }
+
+  div.details-container {
+    color: #0D4744;
+    font-size: 1.15em;
+    margin: 10px;
+    box-shadow: 0px 0px 2px #0D4744;
+    border-radius: 10px;
+    a {
+      text-decoration: none;
+      color: #f9335f;
+    }
+    div.title {
+      background: #E2F2F2;
+      padding: 5px 10px;
+      border-radius: 10px 10px 0 0;
+    }
+    ul.gallery {
+      list-style: none;
+      overflow: hidden;
+      li {
+        width: 100px;
+        height: 100px;
+        float: left;
+        border: 5px solid #0D4744;
+        margin: 10px 0 0 10px;
+      }
+    }
+    div.description {
+      padding: 5px 10px;
+      overflow: hidden;
+      word-wrap: break-word;
+    }
+    div.rating {
+      padding: 5px 10px;
+    }
+    div.location {
+      padding: 5px 10px;
+    }
+    div.categories {
+      padding: 10px;
+      a {
+        color: #0D4744;
+        background: #E2F2F2;
+        padding: 2px 10px;
+        border-radius: 5px;
+      }
+    }
+    div.body {
+      padding: 10px;
+    }
+    div.actions {
+      top: -30px;
+      position: relative;
+      left: 94%;
+      width: 100px;
     }
   }
 }
